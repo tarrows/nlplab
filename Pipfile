@@ -12,3 +12,6 @@ uvicorn = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+server = "uvicorn main:app --reload"

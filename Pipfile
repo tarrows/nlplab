@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+flake8 = "*"
 
 [packages]
 starlette = "*"
@@ -13,9 +14,12 @@ numpy = "*"
 pandas = "*"
 matplotlib = "*"
 pillow = "*"
+jinja2 = "*"
+aiofiles = "*"
 
 [requires]
 python_version = "3.7"
 
 [scripts]
 server = "uvicorn main:app --reload"
+lint = "flake8 main.py"

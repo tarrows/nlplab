@@ -9,6 +9,10 @@ verify_ssl = true
 starlette = "*"
 fastapi = "*"
 uvicorn = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"

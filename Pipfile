@@ -23,5 +23,5 @@ python_version = "3.7"
 
 [scripts]
 server = "uvicorn main:app --reload"
-lint = "flake8 main.py"
+lint = "flake8 main.py lib"
 model_en = "python -m spacy download en_core_web_sm"

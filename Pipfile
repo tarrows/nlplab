@@ -17,6 +17,7 @@ pillow = "*"
 jinja2 = "*"
 aiofiles = "*"
 spacy = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
@@ -24,4 +25,6 @@ python_version = "3.7"
 [scripts]
 server = "uvicorn main:app --reload"
 lint = "flake8 main.py lib"
+test = "python -m unittest discover __tests__"
 model_en = "python -m spacy download en_core_web_sm"
+quickcheck = "python scripts/check_spacy.py"
